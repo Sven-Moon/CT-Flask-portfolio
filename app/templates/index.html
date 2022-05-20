@@ -1,0 +1,81 @@
+{% extends 'components/layout.html' %} {% block content %}
+<section class="hero" id="home">
+  <div class="hero__text">
+    <div class="hero__title">Sven Moon</div>
+    <div class="hero__subtitle">Developer.<br />Traveler.<br />Hobbyist.</div>
+  </div>
+</section>
+<aside id="social-icons">
+  <a
+    href="https://github.com/Sven-Moon"
+    class="social-icon"
+    id="github"
+    style="
+      background-image: url(https://res.cloudinary.com/sventerprise/image/upload/v1649279017/socials/github-ico_ymqjuq.png);
+    "
+  >
+  </a>
+  <a
+    href="https://www.linkedin.com/in/svenmoon/"
+    class="social-icon"
+    id="linkedin"
+    style="
+      background-image: url(https://res.cloudinary.com/sventerprise/image/upload/v1649279309/socials/linkedin-ico_t4ppfs.png);
+    "
+  >
+  </a>
+</aside>
+<section id="about">
+  <div class="about__title">About</div>
+  <div class="about__subtitle">
+    <quote>To truly know a man, one must read about him on the internet.</quote>
+    <div class="about__subtitle">-Aristotle</div>
+  </div>
+  <div class="interest__holder wrap">
+    <article id="development" class="interest"></article>
+    <article id="skills" class="interest"></article>
+    <article id="travel" class="interest"></article>
+    <article id="tinkering" class="interest"></article>
+  </div>
+</section>
+<section id="contact">
+  <div class="contact__header">Whisper Sweet Nothings to Me</div>
+  <div class="contact__form-container">
+    <div class="contact__blurb">
+      I'm available for hire, fireside chats, and general experimentation. If
+      you'd like any of those things, you're invited to send me a message!
+      <img
+        src="https://res.cloudinary.com/sventerprise/image/upload/v1649360523/CT-Portfolio/Ear-trumpet_hsxyxh.png"
+        alt="ear trumpet"
+      />
+    </div>
+    <form id="contact__form">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="me@email.com"
+        class="email"
+      />
+      <textarea
+        rows="4"
+        cols="50"
+        name="message"
+        id="message"
+        placeholder="Message..."
+        class="message"
+      ></textarea>
+      <div id="errors"></div>
+      <button
+        type="submit"
+        class="contact__submit success"
+        id="contact__submit"
+        disabled="true"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+<footer></footer>
+{% endblock content %}
